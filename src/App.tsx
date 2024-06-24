@@ -36,7 +36,10 @@ import "@ionic/react/css/palettes/dark.system.css";
 import "./theme/variables.css";
 import { registerPlugin } from "@capacitor/core";
 
-setupIonicReact();
+setupIonicReact({
+  // mode: "ios",
+  // animated: false,
+});
 
 const App: React.FC = () => (
   <IonApp>
